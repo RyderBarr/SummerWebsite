@@ -11,6 +11,9 @@ body header {
   margin: 3px;
   background-color: #dedeff;
 }
+body header i {
+  padding-right: 10px;
+}
 body header h1 {
   font-family: "rock salt";
   color: #fe7070;
@@ -32,9 +35,31 @@ body main div {
   padding: 2px;
   margin: 2px;
 }
+@media only screen and (min-width: 800px) {
+  body main div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 body main div section {
   padding: 2px;
   margin: 2px;
+}
+@media only screen and (min-width: 800px) {
+  body main div section {
+    width: 40%;
+  }
+}
+body main div section img {
+  height: 60vh;
+  animation: rainbow 10s infinite;
+}
+body main div section h3 {
+  font-family: "rock salt";
+}
+body main div #gallery {
+  display: flex;
+  flex-direction: row;
 }
 body footer {
   border: 3px solid #fc9432;
