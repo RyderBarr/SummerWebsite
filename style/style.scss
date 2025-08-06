@@ -31,8 +31,11 @@ body{
 
         nav{
 
-            a{
+          display: flex;
+          justify-content: space-around;
 
+            a{
+              color: black;
             }
 
         }
@@ -52,6 +55,8 @@ body{
 
         div{
 
+          width: 90vw;
+
             padding: 2px;
             margin: 2px;
 
@@ -59,43 +64,85 @@ body{
             {
 
                 display: flex;
-                justify-content:space-evenly;
+                justify-content:center;
             
 
             }
             
             section{
 
-                padding: 2px;
-                margin: 2px;
+              padding: 2px;
+              margin: 2px;
 
-                @media only screen and (min-width: 800px) 
-                {
+              @media only screen and (min-width: 800px) 
+              {
 
-                  width: 40%;
+                width: 40%;
 
-                }
+              }
+
+              img{
+
+                height: 60vh;
+                animation: rainbow 10s infinite;
+
+              }
+
+              h3{
+
+                font-family: 'rock salt';
+
+              }
+
+              h2{
+
+              }
+
+              h1{
+
+                font-family: "bungee";
+
+              }
+
+              p{
+
+              }
+
+              span{
 
                 img{
 
-                  height: 60vh;
-                  animation: rainbow 10s infinite;
+                  height: 20vh;
+                  
+                }
+
+              }
+
+              fieldset{
+              
+                border: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input{
+
+                  width: 200px;
+                  margin: 5px;
+                  padding: 5px;
 
                 }
 
-                h3{
+                textarea{
 
-                  font-family: 'rock salt';
-
-                }
-
-                h2{
-
-                }
-
-                p{
+                  width: 200px;
+                  height: 100px;
+                  margin: 5px;
+                  padding: 5px;
 
                 }
+
+              }
 
             }
 
@@ -140,6 +187,7 @@ body{
     filter: hue-rotate(0deg);
   }
 }
+
 @keyframes slight {
   0% {
     filter: hue-rotate(0deg);

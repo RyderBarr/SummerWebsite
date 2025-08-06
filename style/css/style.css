@@ -22,6 +22,13 @@ body header h1 {
 body header p {
   font-family: "bungee";
 }
+body header nav {
+  display: flex;
+  justify-content: space-around;
+}
+body header nav a {
+  color: black;
+}
 body main {
   border: 3px solid #fc9432;
   padding: 3px;
@@ -32,13 +39,14 @@ body main {
   background-size: cover;
 }
 body main div {
+  width: 90vw;
   padding: 2px;
   margin: 2px;
 }
 @media only screen and (min-width: 800px) {
   body main div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 body main div section {
@@ -56,6 +64,29 @@ body main div section img {
 }
 body main div section h3 {
   font-family: "rock salt";
+}
+body main div section h1 {
+  font-family: "bungee";
+}
+body main div section span img {
+  height: 20vh;
+}
+body main div section fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main div section fieldset input {
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+}
+body main div section fieldset textarea {
+  width: 200px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
 }
 body main div #gallery {
   display: flex;
