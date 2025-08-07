@@ -10,6 +10,7 @@ body header {
   padding: 3px;
   margin: 3px;
   background-color: #dedeff;
+  border-radius: 10px;
 }
 body header i {
   padding-right: 10px;
@@ -17,7 +18,6 @@ body header i {
 body header h1 {
   font-family: "rock salt";
   color: #fe7070;
-  animation: rainbow 10s infinite;
 }
 body header p {
   font-family: "bungee";
@@ -31,6 +31,7 @@ body header nav a {
 }
 body main {
   border: 3px solid #fc9432;
+  border-radius: 10px;
   padding: 3px;
   margin: 3px;
   background-color: #ffff00;
@@ -64,9 +65,21 @@ body main div section img {
 }
 body main div section h3 {
   font-family: "rock salt";
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+body main div section h2 {
+  border: 3px solid transparent;
+  border-radius: 10px;
 }
 body main div section h1 {
   font-family: "bungee";
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+body main div section p {
+  border: 3px solid transparent;
+  border-radius: 10px;
 }
 body main div section span img {
   height: 20vh;
@@ -102,6 +115,9 @@ body footer p {
   font-family: "rock salt";
   color: #fe7070;
   font-size: larger;
+}
+
+.rainbow {
   animation: rainbow 10s infinite;
 }
 
@@ -111,6 +127,17 @@ body footer p {
   }
   50% {
     filter: hue-rotate(1800deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+@keyframes rapidRainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(2600deg);
   }
   100% {
     filter: hue-rotate(0deg);
