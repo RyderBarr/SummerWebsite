@@ -54,9 +54,6 @@ body{
         background-size:  cover;
 
         div{
-
-          width: 90vw;
-
             padding: 2px;
             margin: 2px;
 
@@ -156,10 +153,28 @@ body{
 
             }
 
+
             #gallery{
 
+              width: 100%;
               display: flex;
               flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+
+              #image{
+
+                width: 80%;
+                height: 80%;
+
+              }
+
+              button{
+
+                width:10%;
+                height: 80px;
+
+              }
 
             }
 
@@ -208,7 +223,7 @@ body{
     filter: hue-rotate(0deg);
   }
   50% {
-    filter: hue-rotate(2600deg);
+    filter: hue-rotate(3600deg);
   }
   100% {
     filter: hue-rotate(0deg);
@@ -224,5 +239,21 @@ body{
   }
   100% {
     filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes disimage {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: scale(3);
+  }
+  50% {
+    transform: scale(0);
+    filter: hue-rotate(360deg);
+
+  }
+  100% {
+    filter: hue-rotate(0deg);
+    transform: scale(3);
   }
 }

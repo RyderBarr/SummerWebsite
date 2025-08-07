@@ -40,7 +40,6 @@ body main {
   background-size: cover;
 }
 body main div {
-  width: 90vw;
   padding: 2px;
   margin: 2px;
 }
@@ -102,8 +101,19 @@ body main div section fieldset textarea {
   padding: 5px;
 }
 body main div #gallery {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body main div #gallery #image {
+  width: 80%;
+  height: 80%;
+}
+body main div #gallery button {
+  width: 10%;
+  height: 80px;
 }
 body footer {
   border: 3px solid #fc9432;
@@ -137,7 +147,7 @@ body footer p {
     filter: hue-rotate(0deg);
   }
   50% {
-    filter: hue-rotate(2600deg);
+    filter: hue-rotate(3600deg);
   }
   100% {
     filter: hue-rotate(0deg);
@@ -152,5 +162,19 @@ body footer p {
   }
   100% {
     filter: hue-rotate(0deg);
+  }
+}
+@keyframes disimage {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: scale(3);
+  }
+  50% {
+    transform: scale(0);
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+    transform: scale(3);
   }
 }/*# sourceMappingURL=style.css.map */

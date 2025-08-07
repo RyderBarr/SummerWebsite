@@ -16,23 +16,33 @@ $(document).ready(function(){
 
         if (currentImageIndex > 0)
         {
-            currentImageIndex = 10;
+            currentImageIndex = 6;
         }
         else
         {
             currentImageIndex--;
         }
 
-        $("#display").replaceWith('<img src="./style/img/img1.jpg" alt="">');
+        $("#display").replaceWith(
+            `
+            <div id="display">
+
+                <img src="./style/img/img${currentImageIndex}.jpg" alt="" id="image" class="${currentImageIndex}">
+
+            </div>
+            `
+        );
+
+        console.log(currentImageIndex);
     
     });
 
-    $("#button1").click(function()
+    $("#button2").click(function()
     {
     
         getImage();
 
-        if (currentImageIndex > 10)
+        if (currentImageIndex > 6)
         {
             currentImageIndex = 0;
         }
@@ -41,7 +51,15 @@ $(document).ready(function(){
             currentImageIndex++;
         }
 
-        $("#display").replaceWith('<img src="./style/img/img1.jpg" alt="">');
+        $("#display").replaceWith(
+            `
+            <div id="display">
+
+                <img src="./style/img/img${currentImageIndex}.jpg" alt="" id="image" class="${currentImageIndex}">
+
+            </div>
+            `
+        );
     
     });
 });

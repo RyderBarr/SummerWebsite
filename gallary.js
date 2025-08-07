@@ -18,30 +18,6 @@ $(document).ready(function(){
 
     });
 
-    $('img').on('mouseover', function() {
-        
-        $(this).css('transform', 'scale(1.3)');
-        
-        $(this).css('padding', '15px');
-        $(this).css('transition', 'padding 0.3s ease, transform 0.3s ease');
-
-        $(this).css('animation', 'none');
-
-    });
-
-    $('img').on('mouseout', function() {
-        
-        $(this).css('transform', 'scale(1)');
-
-        // $(this).css('animation', 'disimage 1s infinite');
-
-        $(this).css('padding', '5px');
-        $(this).css('transition', 'padding 0.3s ease, transform 0.3s ease');
-
-        $(this).css('animation', 'rainbow 10s infinite');
-
-    });
-
     $('.text').on('mouseover', function() {
 
         $(this).css('color', '#ffffff');
