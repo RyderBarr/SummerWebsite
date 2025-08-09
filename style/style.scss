@@ -1,13 +1,17 @@
 body{
     
-    animation: slight 10s infinite;
+    // making the color change not painful
+    animation: slight 2s infinite;
+    
     background-color: #ffdda6;
+    
     display: flex;
     flex-direction: column;
-
     text-align: center;
 
-    header{
+    // making the header very colorful to match the summer theme
+    header
+    {
 
         border: 3px solid #fc9432;
         padding: 3px;
@@ -15,77 +19,104 @@ body{
         background-color: #dedeff;
         border-radius: 10px;
 
-        i{
+        i
+        {
+
           padding-right: 10px;
+
         }
 
-        h1{
+        h1
+        {
+        
             font-family: 'rock salt';
             color: #fe7070;
+        
         }
 
-        p{
+        p
+        {
+
             font-family: "bungee";
+
         }
 
-        nav{
+        nav
+        {
 
           display: flex;
           justify-content: space-around;
 
-            a{
-              color: black;
+            a
+            {
+
+              color: black;  
+
+              // making the links distinct
+              font-family: 'bungee';
+
+              border-bottom: solid 3px black;
+              border-bottom-left-radius: 10px;
+              border-bottom-right-radius: 10px;
+
+              width: 20vw;
+
             }
 
         }
 
     }
 
-    main{
+    // making the main the center of attention
+    main
+    {
 
         border: 3px solid #fc9432;
         border-radius: 10px;
 
         padding: 3px; 
         margin: 3px;
-        background-color: #ffff00;
+        // background-color: #ffff00;
+
+        // svg background
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%5' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8000'/%3E%3Cstop offset='1' stop-color='%23ff8000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2392ff00'/%3E%3Cstop offset='1' stop-color='%2392ff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffed00'/%3E%3Cstop offset='1' stop-color='%23ffed00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffff00'/%3E%3Cstop offset='1' stop-color='%23ffff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF0000'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2324FF00'/%3E%3Cstop offset='1' stop-color='%2324FF00' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+        
         background-attachment: fixed;
         background-size:  cover;
 
-        div{
+        div
+        {
+
             padding: 2px;
             margin: 2px;
+            width: 90vw;
 
+            // the only needed media query
             @media only screen and (min-width: 800px) 
             {
 
                 display: flex;
                 justify-content:center;
-            
 
             }
             
-            section{
+            // text and img style (also form style)
+            section
+            {
 
               padding: 2px;
               margin: 2px;
 
-              @media only screen and (min-width: 800px) 
+              img
               {
-
-                width: 40%;
-
-              }
-
-              img{
 
                 height: 60vh;
                 animation: rainbow 10s infinite;
 
               }
 
-              h3{
+              h3
+              {
 
                 font-family: 'rock salt';
                 border: 3px solid transparent;
@@ -93,31 +124,38 @@ body{
 
               }
 
-              h2{
+              h2
+              {
 
                 border: 3px solid transparent;
                 border-radius: 10px;
 
               }
 
-              h1{
+              h1
+              {
 
                 font-family: "bungee";
 
                 border: 3px solid transparent;
                 border-radius: 10px;
+              
               }
 
-              p{
+              p
+              {
 
                 border: 3px solid transparent;
                 border-radius: 10px;
 
               }
 
-              span{
+              // set base image style
+              span
+              {
 
-                img{
+                img
+                {
 
                   height: 20vh;
                   
@@ -125,27 +163,59 @@ body{
 
               }
 
-              fieldset{
+              // make the input fields stand out from other pages
+              fieldset
+              {
               
                 border: none;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                input{
+                input
+                {
 
-                  width: 200px;
+                  width: 400px;
                   margin: 5px;
                   padding: 5px;
+
+                  border: 2px solid rgb(93, 205, 199);
+                  border-radius: 10px;
+
+                  background-color: #dedeff;
 
                 }
 
-                textarea{
+                textarea
+                {
 
-                  width: 200px;
+                  width: 400px;
                   height: 100px;
                   margin: 5px;
                   padding: 5px;
+
+                  border: 2px solid rgb(93, 205, 199);
+                  border-radius: 10px;
+
+                  background-color: #dedeff;
+
+                }
+
+                // button for the form
+                button
+                {
+
+                  width: 200px;
+                  height: 50px;
+                  margin: 5px;
+                  padding: 5px;
+
+                  border: 2px solid rgb(93, 205, 199);
+                  border-radius: 10px;
+
+                  background-color: #dedeff;
+                  font-family: 'rock salt';
+                  font-size: larger;
 
                 }
 
@@ -153,23 +223,27 @@ body{
 
             }
 
-
-            #gallery{
+            // for the gallory page (only slightly different from base style)
+            #gallery
+            {
 
               width: 100%;
               display: flex;
               flex-direction: row;
               justify-content: space-between;
               align-items: center;
+              min-height: 60vh;
 
-              #image{
+              #image
+              {
 
-                width: 80%;
-                height: 80%;
+                max-width: 40vw;
+                max-height: 40vh;
 
               }
 
-              button{
+              button
+              {
 
                 width:10%;
                 height: 80px;
@@ -182,78 +256,119 @@ body{
 
     }
 
-    footer{
+    // making the footer pop like the header
+    footer
+    {
 
         border: 3px solid #fc9432;
         padding: 3px;
         margin: 3px;
         background-color: #dedeff;
 
-        p{
+        p
+        {
 
             font-family: 'rock salt';
             color: #fe7070;
             font-size: larger;
+        
         }
 
     }
 
 }
 
-.rainbow{
+// class for an animation
+.rainbow
+{
 
   animation: rainbow 10s infinite;
 
 }
 
-@keyframes rainbow {
+// animations below
+
+@keyframes rainbow
+{
+
   0% {
+
     filter: hue-rotate(0deg);
+  
   }
+
   50% {
+
     filter: hue-rotate(1800deg);
+  
   }
+
   100% {
+
     filter: hue-rotate(0deg);
+  
   }
+
 }
 
-@keyframes rapidRainbow {
+@keyframes rapidRainbow 
+{
+
   0% {
+
     filter: hue-rotate(0deg);
+  
   }
+
   50% {
+
     filter: hue-rotate(3600deg);
+  
   }
+
   100% {
+
     filter: hue-rotate(0deg);
+  
   }
+
 }
 
-@keyframes slight {
+@keyframes slight 
+{
+
   0% {
+
     filter: hue-rotate(0deg);
+
   }
+
   50% {
+
     filter: hue-rotate(-25deg);
-  }
-  100% {
-    filter: hue-rotate(0deg);
-  }
-}
-
-@keyframes disimage {
-  0% {
-    filter: hue-rotate(0deg);
-    transform: scale(3);
-  }
-  50% {
-    transform: scale(0);
-    filter: hue-rotate(360deg);
 
   }
+
   100% {
+
     filter: hue-rotate(0deg);
-    transform: scale(3);
+
   }
+
 }
+
+// @keyframes disimage {
+//   0% {
+//     filter: hue-rotate(0deg);
+//     transform: scale(3);
+//   }
+//   50% {
+//     transform: scale(0);
+//     filter: hue-rotate(360deg);
+
+//   }
+//   100% {
+//     filter: hue-rotate(0deg);
+//     transform: scale(3);
+//   }
+// }

@@ -16,11 +16,11 @@ $(document).ready(function(){
 
         if (currentImageIndex > 0)
         {
-            currentImageIndex = 6;
+            currentImageIndex --;
         }
         else
         {
-            currentImageIndex--;
+            currentImageIndex -= -6;
         }
 
         $("#display").replaceWith(
@@ -42,7 +42,7 @@ $(document).ready(function(){
     
         getImage();
 
-        if (currentImageIndex > 6)
+        if (currentImageIndex > 5)
         {
             currentImageIndex = 0;
         }
@@ -62,4 +62,60 @@ $(document).ready(function(){
         );
     
     });
+
+    $(document).on('keypress', function(event) 
+    {
+
+        getImage();
+
+        if (event.key === 'a') 
+        {
+
+            if (currentImageIndex > 0)
+            {
+                currentImageIndex --;
+            }
+            else
+            {
+                currentImageIndex -= -6;
+            }
+
+            $("#display").replaceWith(
+                `
+                <div id="display">
+
+                    <img src="./style/img/img${currentImageIndex}.jpg" alt="" id="image" class="${currentImageIndex}">
+
+                </div>
+                `
+            );
+
+        } 
+        
+        if(event.key === 'd') 
+        {
+
+           if (currentImageIndex > 5)
+        {
+            currentImageIndex = 0;
+        }
+        else
+        {
+            currentImageIndex++;
+        }
+
+        $("#display").replaceWith(
+            `
+            <div id="display">
+
+                <img src="./style/img/img${currentImageIndex}.jpg" alt="" id="image" class="${currentImageIndex}">
+
+            </div>
+            `
+        );
+    
+        }
+
+    });
+
 });
