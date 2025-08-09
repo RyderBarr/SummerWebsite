@@ -46,7 +46,7 @@ body main {
 body main div {
   padding: 2px;
   margin: 2px;
-  width: 90vw;
+  width: 100%;
 }
 @media only screen and (min-width: 800px) {
   body main div {
@@ -57,10 +57,10 @@ body main div {
 body main div section {
   padding: 2px;
   margin: 2px;
+  justify-content: space-evenly;
 }
 body main div section img {
   height: 60vh;
-  animation: rainbow 10s infinite;
 }
 body main div section h3 {
   font-family: "rock salt";
@@ -118,12 +118,15 @@ body main div section fieldset button {
   font-size: larger;
 }
 body main div #gallery {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   min-height: 60vh;
+}
+body main div #gallery #display {
+  width: 70%;
 }
 body main div #gallery #image {
   max-width: 40vw;
@@ -132,6 +135,12 @@ body main div #gallery #image {
 body main div #gallery button {
   width: 10%;
   height: 80px;
+}
+@media only screen and (min-width: 800px) {
+  body main div #gallery {
+    width: 100%;
+    height: 60vh;
+  }
 }
 body footer {
   border: 3px solid #fc9432;
