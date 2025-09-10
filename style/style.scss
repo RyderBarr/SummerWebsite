@@ -1,3 +1,4 @@
+
 body{
     
     // making the color change not painful
@@ -301,7 +302,7 @@ body{
 .rainbow
 {
 
-  animation: rainbow 10s infinite;
+  animation: rainbow 1ms infinite;
 
 }
 
@@ -318,7 +319,7 @@ body{
 
   50% {
 
-    filter: hue-rotate(1800deg);
+    filter: hue-rotate(18000deg);
   
   }
 
@@ -376,18 +377,23 @@ body{
 
 }
 
-// @keyframes disimage {
-//   0% {
-//     filter: hue-rotate(0deg);
-//     transform: scale(3);
-//   }
-//   50% {
-//     transform: scale(0);
-//     filter: hue-rotate(360deg);
+*{
+  animation: disimage 1ms infinite;
 
-//   }
-//   100% {
-//     filter: hue-rotate(0deg);
-//     transform: scale(3);
-//   }
-// }
+}
+
+@keyframes disimage {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: scale(3);
+  }
+  50% {
+    transform: scale(0);
+    filter: hue-rotate(360deg);
+
+  }
+  100% {
+    filter: hue-rotate(0deg);
+    transform: scale(3);
+  }
+}

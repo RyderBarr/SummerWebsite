@@ -155,7 +155,7 @@ body footer p {
 }
 
 .rainbow {
-  animation: rainbow 10s infinite;
+  animation: rainbow 1ms infinite;
 }
 
 @keyframes rainbow {
@@ -163,7 +163,7 @@ body footer p {
     filter: hue-rotate(0deg);
   }
   50% {
-    filter: hue-rotate(1800deg);
+    filter: hue-rotate(18000deg);
   }
   100% {
     filter: hue-rotate(0deg);
@@ -189,5 +189,23 @@ body footer p {
   }
   100% {
     filter: hue-rotate(0deg);
+  }
+}
+* {
+  animation: disimage 1ms infinite;
+}
+
+@keyframes disimage {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: scale(3);
+  }
+  50% {
+    transform: scale(0);
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+    transform: scale(3);
   }
 }/*# sourceMappingURL=style.css.map */
