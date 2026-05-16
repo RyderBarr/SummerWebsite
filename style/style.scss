@@ -302,7 +302,7 @@ body{
 .rainbow
 {
 
-  animation: rainbow 1ms infinite;
+  animation: rainbow 10s infinite;
 
 }
 
@@ -319,7 +319,7 @@ body{
 
   50% {
 
-    filter: hue-rotate(18000deg);
+    filter: hue-rotate(360deg);
   
   }
 
@@ -378,6 +378,7 @@ body{
 }
 
 *{
+
   // animation: disimage 1ms infinite;
 
 }

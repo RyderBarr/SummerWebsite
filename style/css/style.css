@@ -155,7 +155,7 @@ body footer p {
 }
 
 .rainbow {
-  animation: rainbow 1ms infinite;
+  animation: rainbow 10s infinite;
 }
 
 @keyframes rainbow {
@@ -163,7 +163,7 @@ body footer p {
     filter: hue-rotate(0deg);
   }
   50% {
-    filter: hue-rotate(18000deg);
+    filter: hue-rotate(360deg);
   }
   100% {
     filter: hue-rotate(0deg);
@@ -191,10 +191,6 @@ body footer p {
     filter: hue-rotate(0deg);
   }
 }
-* {
-  animation: disimage 1ms infinite;
-}
-
 @keyframes disimage {
   0% {
     filter: hue-rotate(0deg);
